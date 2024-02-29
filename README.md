@@ -10,13 +10,13 @@ Overview
 ### 🔍 Chapter Navigation:
 Easily navigate through different chapters to uncover the wisdom within.
 
-###📜 Verse Details:
+### 📜 Verse Details:
 Dive deep into each verse to understand its meaning and significance.
 
-###🤔 Interpretations:
+### 🤔 Interpretations:
 Gain insights into various interpretations and commentaries on the verses.
 
-###🌐 Background Information:
+### 🌐 Background Information:
 Access background information about the Bhagavad Gita and its historical context.
 
 This is a Webstite that consists of all the **Chapters**, **vereses** from Srimad Bhagavad Gita that is retrieved using the [Bhagavad Gita RapiAPI](https://rapidapi.com/bhagavad-gita-bhagavad-gita-default/api/bhagavad-gita3).
