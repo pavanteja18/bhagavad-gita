@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhagvad Gita</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        #gallery{
+            padding: 100px;
+        }
+        #summary{
+          display: inline-block;
+          width: 340px;
+          height: 100px;
+
+          overflow: hidden;
+          white-space: wrap;
+          text-overflow: clip;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="p-3 mb-3 border-bottom">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+              <h1 class="display-6 px-3 fw-bold text-body-emphasis">Bhagavad Gita</h1>
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="/index.html" class="nav-link px-3 fw-light link-body-emphasis">Home</a></li>
+              <li><a href="chapters.html" class="nav-link px-3 fw-normal link-body-emphasis">Chapters</a></li>
+              <li><a href="https://www.amazon.in/s?k=Bhagavad+Gita&i=stripbooks&ref=nb_sb_noss" class="nav-link px-3 fw-normal link-body-emphasis">Buy</a></li>
+              <li><a href="index.html" class="nav-link px-3 fw-normal link-body-emphasis">About</a></li>
+            </ul>
+    
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+              <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+            </form>
+    
+            <div class="dropdown text-end">
+              <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="mdo" width="32" height="32" class="rounded-circle">
+              </a>
+              <ul class="dropdown-menu text-small">
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Sign out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </header>
+
+    
+    <div id="gallery" class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <% if(locals.response) { %>
+            <% for(let i = 0; i <= (response.data.length - 1); i++) { %>
+            <div class="col">
+                <div class="card shadow-sm">
+                <div class="card-body">
+                  <% var chapter_num = (i + 1) %>
+                    <h1 class="display-6 fw-bold text-body-emphasis text-center">Chapter <%- i + 1 %></h1>
+                        <p class="text-center card-text"><%= response.data[i].name %></p>
+                        <p class="text-center card-text"><%= response.data[i].name_translated %></p>
+                        <p  id="summary" class="text-center card-text"><%= response.data[i].chapter_summary %></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <form action="/" method="POST">
+                        <div class="text-center">
+                          <button  class="p-2 btn btn-secondary" href="#" name="id"  value='<%- chapter_num %>''>View</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <% } %>
+            <% } %>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+    </script>
+  </body>
+</html>
