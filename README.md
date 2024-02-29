@@ -29,5 +29,5 @@ This is developed using the *Node JS* and *Axios modules*.
 `git clone https://github.com/your-username/bhagavad-gita-explorer.git`
 
 ## Contribution Guidelines
-🤝 We welcome contributions to enhance and expand the Bhagavad Gita Explorer. If you'd like to contribute, please follow our Contribution Guidelines.
+🤝 We welcome contributions to enhance and expand the Bhagavad Gita Explorer. If you'd like to contribute, please contact pavantejamadhurantakam@gmail.com.
 
