@@ -1,5 +1,5 @@
 # Bhagavad Gita
-### Wesite for E-Gita.
+### Website for E-Gita.
 
 This is a Webstite that consists of all the **Chapters**, **vereses** from Srimad Bhagavad Gita that is retrieved using the [Bhagavad Gita RapiAPI](https://rapidapi.com/bhagavad-gita-bhagavad-gita-default/api/bhagavad-gita3).
 This is developed using the *Node JS* and *Axios modules*. 
