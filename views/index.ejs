@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhagvad Gita</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style></style>
+  </head>
+  <body>
+    <header class="p-3 mb-3 border-bottom">
+      <div class="container">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+        >
+          <a
+            href="/"
+            class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none"
+          >
+            <h1 class="display-6 px-3 fw-bold text-body-emphasis">
+              Bhagavad Gita
+            </h1>
+          </a>
+
+          <ul
+            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+          >
+            <li>
+              <a href="#" class="nav-link px-3 fw-normal link-body-emphasis"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="chapters.html"
+                class="nav-link px-3 fw-normal link-body-emphasis"
+                >Chapters</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.amazon.in/s?k=Bhagavad+Gita&i=stripbooks&ref=nb_sb_noss"
+                class="nav-link px-3 fw-normal link-body-emphasis"
+                >Buy</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="nav-link px-3 fw-normal link-body-emphasis"
+                >About</a
+              >
+            </li>
+          </ul>
+
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="Search..."
+              aria-label="Search"
+            />
+          </form>
+
+          <div class="dropdown text-end">
+            <a
+              href="#"
+              class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+                alt="mdo"
+                width="32"
+                height="32"
+                class="rounded-circle"
+              />
+            </a>
+            <ul class="dropdown-menu text-small">
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="px-4 py-5 my-4 text-center">
+      <img
+        class="d-block mx-auto mb-4"
+        src="https://i.ibb.co/r4fZWCF/swastika.png"
+        alt=""
+        width="72"
+        height="auto"
+      />
+      <h1 class="display-5 fw-bold text-body-emphasis">Quote of the day</h1>
+      <div class="col-lg-6 mx-auto">
+        <% if(locals.quote) { %>
+        <p class="lead mb-4"><%= quote %></p>
+        <% } else { %>
+        <p class="lead mb-4">I am death, the destroyer of worlds.</p>
+        <% } %>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <button type="button" class="btn btn-warning btn-lg px-3">
+            Learn more.
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-secondary btn-lg px-4"
+            onClick="window.location.reload();"
+          >
+            Random
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-5 text-center bs-light-bg-subtle border shadow-sm rounded-3">
+      <h1 class="display-5 fw-bold text-body-emphasis">Bhagavad Gita</h1>
+      <h3 class="display-7 fw-bold text-body-emphasis">Verse of the day</h3>
+      <% if(locals.verse) { %>
+      <p class="lead">
+        <b><%= verse %></b>
+      </p>
+      <p class="lead"><%= verseeng %></p>
+      <p class="lead">
+        <b><%= versedesc %></b>
+      </p>
+      <% } else { %>
+      <p class="lead">
+        This is a simple Bootstrap jumbotron that sits within a
+        <code>.container</code>, recreated with built-in utility classes.
+      </p>
+      <% } %>
+    </div>
+
+    <div class="b-example-divider"></div>
+
+    <div class="container my-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="https://m.media-amazon.com/images/I/91o--qQpzQL.jpg"
+            class="d-block mx-lg-auto img-fluid"
+            alt="Bootstrap Themes"
+            width="300"
+            height="100"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+            Why to read Srimad Bhagavad-Gita?
+          </h1>
+          <p class="lead">
+            The Bhagavad Gita, a sacred Hindu scripture, offers timeless wisdom
+            and spiritual guidance. In a profound dialogue between Prince Arjuna
+            and Lord Krishna, it addresses the complexities of life, duty, and
+            morality. Set on the battlefield of Kurukshetra, it provides
+            insights into self-realization, the nature of existence, and the
+            path to spiritual awakening. Renowned for its philosophical depth,
+            the Gita remains a source of inspiration, guiding individuals
+            through life's dilemmas and offering a profound understanding of the
+            self and the universe. Reading the Bhagavad Gita is a transformative
+            journey, fostering spiritual growth and enlightenment.
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a href="https://en.wikipedia.org/wiki/Bhagavad_Gita"
+              ><button
+                type="button"
+                class="btn btn-warning btn-lg px-4 me-md-2"
+                fdprocessedid="atzuqc"
+              >
+                Learn more
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="b-example-divider"></div>
+    </div>
+
+    <div id="about" class="px-4 pt-5 my-5 text-center">
+      <h1 class="display-4 fw-bold text-body-emphasis">Srimad Bhagavad Gita</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+          The Srimad Bhagavad Gita imparts timeless values, emphasizing duty
+          (dharma), selfless action (karma yoga), and devotion (bhakti yoga). It
+          guides one to navigate life with integrity, detachment from results,
+          and a compassionate heart. The Gita instills the importance of inner
+          peace, ethical conduct, and the pursuit of knowledge. Its teachings
+          transcend time, offering profound insights into the nature of
+          existence and the path to spiritual fulfillment.
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+          <a href="https://en.wikipedia.org/wiki/Bhagavad_Gita"
+            ><button
+              type="button"
+              class="btn btn-warning btn-lg px-4 me-sm-3"
+              fdprocessedid="3xmxil"
+            >
+              Learn more.
+            </button></a
+          >
+          <button
+            type="button"
+            class="btn btn-outline-secondary btn-lg px-4"
+            fdprocessedid="uzhebm"
+          >
+            Support us
+          </button>
+        </div>
+      </div>
+      <div class="overflow-hidden" style="max-height: 40vh">
+        <div class="container px-5">
+          <img
+            src="https://hinduismwayoflife.com/wp-content/uploads/2018/03/Bhagavad-gita-4-601x321.jpg"
+            class="img-fluid border rounded-3 shadow-lg mb-4"
+            alt="Example image"
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="b-example-divider"></div>
+
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="d-block mb-2"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <title>Product</title>
+            <circle cx="12" cy="12" r="10"></circle>
+            <path
+              d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"
+            ></path>
+          </svg>
+          <small class="d-block mb-3 text-body-secondary">© 2024</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Cool stuff</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Random feature</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Team feature</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Stuff for developers</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Another one</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Last time</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Wikipedia</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Youtube</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >News & Feed
+              </a>
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">Books</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Business</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Education</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Government</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">Gaming</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">Team</a>
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Locations</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Privacy</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">Terms</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
